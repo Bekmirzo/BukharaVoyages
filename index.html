@@ -7,6 +7,7 @@
   <title>Bootstrap 5 Navbar with Dropdown</title>
   <!-- Bootstrap 5 CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
 </head>
 
 <body>
@@ -21,14 +22,8 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tur paketlar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontaktlar</a>
+          <li class="nav-item" id="nav_asosiy">
+            <a class="nav-link active" aria-current="page" href="">Asosiy</a>
           </li>
         </ul>
 
@@ -125,7 +120,7 @@
       </div>
       <br>
 
-      <p class="display-2 text-uppercase text-center"> Bizning tur paketlar</p>
+      <p class="display-2 text-uppercase text-center" id="tp_header"> Bizning tur paketlar</p>
 
       <div class="row">
         <div class="col">
@@ -138,7 +133,8 @@
                 boriladi...</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil</li>
+              <li id="buxoro_btn" class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil
+              </li>
             </ul>
           </div>
         </div>
@@ -151,7 +147,8 @@
                 maydoni, Mirzo Ulug‘bek rasadxonasi kabi joylarda boriladi ... </p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil</li>
+              <li id="samarqand_btn" class="list-group-item text-center bg-primary text-bg-primary" role="button">
+                Batafsil</li>
             </ul>
           </div>
         </div>
@@ -165,7 +162,8 @@
                 boriladi...</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil</li>
+              <li id="shahrizabz" class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil
+              </li>
             </ul>
           </div>
         </div>
@@ -179,7 +177,8 @@
                 boriladi...</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil</li>
+              <li id="xiva_btn" class="list-group-item text-center bg-primary text-bg-primary" role="button">Batafsil
+              </li>
             </ul>
           </div>
         </div>
@@ -191,13 +190,17 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6 mb-3" style="background-image: url('./img/sayohat1.jpg'); background-size: cover; height: 400px;">
+          <div class="col-6 mb-3"
+            style="background-image: url('./img/sayohat1.jpg'); background-size: cover; height: 400px;">
           </div>
-          <div class="col-6 mb-3" style="background-image: url('./img/sayohat2.jpg'); background-size: cover; height: 400px;">
+          <div class="col-6 mb-3"
+            style="background-image: url('./img/sayohat2.jpg'); background-size: cover; height: 400px;">
           </div>
-          <div class="col-6 mb-3" style="background-image: url('./img/sayohat3.jpg'); background-size: cover; height: 400px;">
+          <div class="col-6 mb-3"
+            style="background-image: url('./img/sayohat3.jpg'); background-size: cover; height: 400px;">
           </div>
-          <div class="col-6 mb-3" style="background-image: url('./img/sayohat4.jpg'); background-size: cover; height: 400px;">
+          <div class="col-6 mb-3"
+            style="background-image: url('./img/sayohat4.jpg'); background-size: cover; height: 400px;">
           </div>
         </div>
       </div>
@@ -205,9 +208,28 @@
       <br>
     </div>
   </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col d-flex align-items-center">
+      &emsp;<span class="mb-3 mb-md-0 text-body-secondary">© 2024 BUKHARA UNIVERSAL VOYAGES M.CH.J.&nbsp;&nbsp; </span>
+      &emsp;&emsp;<a href="https://t.me/+998907883731" class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
+        <i class="fa-brands fa-telegram"></i> &nbsp; +998 90 788 37 31
+      </a>&emsp;
+      <a class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
+        <i class="fa-solid fa-phone"></i> &nbsp; +998 94 321 37 31
+      </a>&emsp;
+      <a href="https://wa.me/+998907883731" class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
+        <i class="fa-brands fa-square-whatsapp"></i> &nbsp; +998 90 788 37 31
+      </a>
+    </div>
 
+  </footer>
   <!-- Bootstrap 5 JS Bundle (includes Popper.js) -->
   <script src="./js/bootstrap.bundle.js"></script>
+
+  <script src="./fontawesome-free-6.6.0-web/js/all.js"></script>
+
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
