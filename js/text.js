@@ -1595,7 +1595,7 @@ const text = {
     <br>
 </div>
             `,
-            uz: `
+            en: `
             <h1 style="color: #3077C6" class="text-center text-uppercase">
     <font style="vertical-align: inherit;">
         <font style="vertical-align: inherit;">Travel and pilgrimage to Khiva City</font>
