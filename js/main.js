@@ -24,7 +24,6 @@ lang_dropdown.onclick = function (event) {
   switch (lng) {
     case 'uz':
       dw_main.innerHTML = `<img src="./img/flags/UZ.png">&nbsp; O‘zbek`;
-
       header_text.innerHTML = text.header_text.uz;
       break;
     case 'en':
@@ -73,8 +72,8 @@ window.onload = function () {
 
   sessionStorage.setItem('stat', 'asosiy');
   const language = sessionStorage.getItem('language');
-  if (language == null) sessionStorage.setItem('language', 'uz');
-
+  // if (language == null) sessionStorage.setItem('language', 'uz');
+  sessionStorage.setItem('language', 'uz')
 }
 
 
@@ -89,12 +88,18 @@ function asosiy() {
 
   switch (language) {
     case 'uz':
+      dw_main.innerHTML = `<img src="./img/flags/UZ.png">&nbsp; O‘zbek`;
+      header_text.innerHTML = text.header_text.uz;
       main_content.innerHTML = text.main.uz;
       break;
     case 'ru':
+      dw_main.innerHTML = `<img lng="ru" src="./img/flags/RU.png">&nbsp;Русский`;
+      header_text.innerHTML = text.header_text.ru;
       main_content.innerHTML = text.main.ru;
       break;
     case 'en':
+      dw_main.innerHTML = `<img lng="en" src="./img/flags/US.png">&nbsp;English`;
+      header_text.innerHTML = text.header_text.en;
       main_content.innerHTML = text.main.en;
       break;
 
