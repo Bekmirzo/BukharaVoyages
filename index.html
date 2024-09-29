@@ -8,6 +8,7 @@
   <!-- Bootstrap 5 CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -25,6 +26,29 @@
           <li class="nav-item" id="nav_asosiy">
             <a class="nav-link active" aria-current="page" href="">Asosiy</a>
           </li>
+          <li class="nav-item dropdown">
+            <button id="dw_main" class="btn btn-dark dropdown-toggle d-flex align-items-center"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/flags/UZ.png">&nbsp; O‘zbek
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" id="lang_dropdown">
+              <li lng="uz">
+                <button lng="uz" class="dropdown-item">
+                  <img lng="uz" src="./img/flags/UZ.png">&nbsp; O‘zbek
+                </button>
+              </li>
+              <li lng="en">
+                <button lng="en" class="dropdown-item">
+                  <img lng="en" src="./img/flags/US.png">&nbsp;English
+                </button>
+              </li>
+              <li lng="ru">
+                <button lng="ru" class="dropdown-item">
+                  <img lng="ru" src="./img/flags/RU.png">&nbsp;Русский
+                </button>
+              </li>
+            </ul>
+          </li>
         </ul>
 
       </div>
@@ -40,15 +64,15 @@
       <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="header_text">
       <div class="carousel-item active" style="height: 300px;">
         <img src="./img/banner-1.jpg" class="d-block w-100" alt="...">
         <div class="container">
-          <div class="carousel-caption">
+          <div class="carousel-caption" >
             <h1 style="font-size: 65px;"><span style="color: #FFCB3C;">BUKHARA</span> <span
                 style="color: #252524;">UNIVERSAL</span> <span style="color: #FFCB3C;">VOYAGES</span></h1>
             <p>Masʼuliyati cheklangan jamiyati</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Batafsil</a></p>
+            <h1><span class="badge text-bg-success">Sizning ishonchli hamrohingiz</span></h1>
           </div>
         </div>
       </div>
@@ -59,7 +83,7 @@
             <h1 style="font-size: 65px;"><span style="color: #FFFFFF;">BUKHARA</span> <span
                 style="color: #252524;">UNIVERSAL</span> <span style="color: #FFFFFF;">VOYAGES</span></h1>
             <p>Masʼuliyati cheklangan jamiyati</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Batafsil</a></p>
+            <h1><span class="badge text-bg-warning">Sizning ishonchli hamrohingiz</span></h1>
           </div>
         </div>
       </div>
@@ -70,7 +94,7 @@
             <h1 style="font-size: 65px;"><span style="color: #252524;">BUKHARA</span> <span
                 style="color: #252524;">UNIVERSAL</span> <span style="color: #252524;">VOYAGES</span></h1>
             <p>Masʼuliyati cheklangan jamiyati</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Batafsil</a></p>
+            <h1><span class="badge text-bg-primary">Sizning ishonchli hamrohingiz</span></h1>
           </div>
         </div>
       </div>
@@ -211,13 +235,15 @@
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col d-flex align-items-center">
       &emsp;<span class="mb-3 mb-md-0 text-body-secondary">© 2024 BUKHARA UNIVERSAL VOYAGES M.CH.J.&nbsp;&nbsp; </span>
-      &emsp;&emsp;<a href="https://t.me/+998907883731" class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
+      &emsp;&emsp;<a href="https://t.me/+998907883731"
+        class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
         <i class="fa-brands fa-telegram"></i> &nbsp; +998 90 788 37 31
       </a>&emsp;
       <a class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
         <i class="fa-solid fa-phone"></i> &nbsp; +998 94 321 37 31
       </a>&emsp;
-      <a href="https://wa.me/+998907883731" class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
+      <a href="https://wa.me/+998907883731"
+        class=" mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none d-flex align-items-center">
         <i class="fa-brands fa-square-whatsapp"></i> &nbsp; +998 90 788 37 31
       </a>
     </div>
@@ -228,6 +254,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
 
+
+  <script src="./js/text.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
